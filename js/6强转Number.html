@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1.用Number()函数
+            //字符串：纯数字-->直接转换 ； 有非法字符-->NaN ； 控串或全是空格-->0
+            //布尔：true-->1 : false-->0
+            //numm-->0
+            //undefined-->NaN
+        
+        var a="456";
+        a=Number(a);
+        console.log(a);
+        console.log(typeof a);
+
+        //2.用parseInt或parseFloat
+            //提取字符串中的有效整数或浮点数
+            //也可以用parseInt来为浮点数取整
+
+        var b="14aa41";
+        b=parseInt(b);
+        console.log(b);
+
+        var c="14.54ss4"
+        console.log(parseFloat(c));
+
+        //3.parseInt可以用第二个参数指定进制
+        var m="070";
+        console.log(parseInt(m,10));
+        console.log(parseInt(m,8));
+        console.log(parseInt(m,11));
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

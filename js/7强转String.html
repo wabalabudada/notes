@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1.调用数据类型的toString()方法
+            //该方法不影响原变量
+            //Null和Undefined没有该方法
+        var a=123;
+        var b=a.toString();
+        console.log(a);
+        console.log(typeof a);
+        console.log(b);
+        console.log(typeof b);
+
+        //2.调用String()函数
+            //这种方式可以处理Null和Undefined
+        var c=null;
+        var d=String(c);
+        console.log(c);
+        console.log(typeof c);
+        console.log(d);
+        console.log(typeof d);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
