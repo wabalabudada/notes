@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    var obj = new Object();
+    obj.name="Tom";
+    obj.age=19;
+    delete obj.name;
+    obj.age=20;
+    console.log(obj.age);
+    console.log(obj.name);
+
+    var obj1=new Object(),obj2=new Object();
+    obj1.val=obj2;
+    obj2.val=22;
+    console.log(obj1.val.val);
+    console.log("val" in obj1);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

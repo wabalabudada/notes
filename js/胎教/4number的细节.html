@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1.浮点运算是不精确的
+        console.log(0.1+0.2);
+
+        //2.精度范围是Number.MIN_VALUE到Number.MAX_VALUE
+        var min=Number.MIN_VALUE;
+        console.log(min);
+        var max=Number.MAX_VALUE;
+        console.log(max);
+        
+        //3.一些特殊的number
+            //3.1超出范围报Infinity或-Infinity
+            console.log(Number.MAX_VALUE*2);
+            console.log(-Number.MAX_VALUE*2);
+
+            //3.2.非法数字报NaN(Not a number)
+            console.log("a"*"b");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

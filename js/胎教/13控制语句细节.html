@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1.do...while的while后没有分号
+        var a=0;
+        do{
+            alert(a++);
+        }while(a<=3)
+
+        //2.可以给循环一个标识
+        out:
+        for(var i=1;i<=3;i++)
+        {
+            document.write("外层循环"+i);
+            for(var j=1;j<=3;j++)
+            {
+                document.write("内层循环"+j);
+                if(i==2&&j==1)
+                {
+                    break out;
+                }
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

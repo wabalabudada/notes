@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1.js中||,&&可以运算非布尔值
+            //1.1&&第一个为false则返回它，否则返回第二个;||反之
+            console.log(5&&0); //0
+            console.log(""&&"a"); //""
+            console.log("ll"||NaN); //"ll"
+            console.log(undefined||11); //11
+
+        //2.!对非布尔值操作，先将它强转为布尔值，再取反
+            console.log(!"");
+
+        //3.+可以直接拼接字符串，比较运算符可以直接比较字符串的字典序
+            var a="abc"+"def";
+            console.log("a="+a);
+            console.log(a<"efg");
+
+        //4.undefined衍生子null，做相等判断返回true
+            console.log("undefined == null:" + (undefined == null));
+
+        //5.NaN不和任何值相等，包括自身，要判断一个值是否为NaN，用isNaN()
+            var a=null;
+            console.log("a == null:"+ (a == null));
+            console.log("isNaN(a):"+isNaN(a));
+
+        //6.js中有===和!==运算
+            //==和!=会做自动类型转换，而===和!===不会
+        console.log("1 == '1':" + (1=='1'));
+        console.log("1 != '1':" + (1!='1'));
+        console.log("1 === '1':" + (1==='1'));
+        console.log("1 !== '1':" + (1!=='1'));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
